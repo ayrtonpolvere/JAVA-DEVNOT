@@ -1,0 +1,44 @@
+Algoritmo
+
+1 - Obter o valor do litro do combustível - em reais;
+
+2 - Obter quilometros por litro que o carro realiza - em quilometros;
+
+3 - Obter a distância - em quilômetros - que será percorrida;
+
+4 - Dividir quilometros percorridos por Km/litro e mutiplicar quantidade de litros gastos pelo preço do combustível.
+
+5 - Exibir valor total gasto.
+
+Pseudocódigo
+
+1. preçolitrocombustivel = obterInformacaoDoUsuario(); 
+2. kmlitro = obterInformacaoDoUsuario();
+3. distanciapercorrida = obterInformacaoDoUsuario();
+4. quantidadelitrosgastos = distanciaPercorrida/kmlitro*preçolitrocombustivel; 
+5. exibirResultadoParaUsuario(valortotalgasto);
+
+
+package Calculoviagem;
+
+public class calculoviagem {
+    public static void main(String[] args) {
+        // Obter o valor do litro do combustível
+        int preçolitrocombustivel = 5;
+        /*
+         * Obter quilometros por litro que o carro realiza
+         */
+        int kmlitro = 10;
+        /*
+         * Obter a distância que será percorrida
+         */
+        int distanciapercorrida = 100;
+        /*
+         * Dividir quilometros percorridos por Km/litro
+         */
+        float calculoviagem = distanciapercorrida / kmlitro * preçolitrocombustivel;
+        System.out.println("Valor total gasto:");
+        System.out.println(calculoviagem + " R$");
+
+    }
+}
